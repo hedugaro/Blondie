@@ -1,0 +1,762 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.example.com/blondie.owl#"
+     xml:base="http://www.example.com/blondie.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.example.com/blondie.owl">
+        <rdfs:comment>BLONDIE: Bitcoin Ontology with Dynamic Extensibility
+Ontology for Cryptocurrencies</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/blondie.owl#blockheaderListEthereumPayload -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/blondie.owl#blockheaderListEthereumPayload">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumPayload"/>
+        <rdfs:range rdf:resource="http://www.example.com/blondie.owl#EthereumBlockheader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#transactionInputListBitcoinTransaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/blondie.owl#transactionInputListBitcoinTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransaction"/>
+        <rdfs:range rdf:resource="http://www.example.com/blondie.owl#BitcoinTransaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#transactionListPayload -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/blondie.owl#transactionListPayload">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#Payload"/>
+        <rdfs:range rdf:resource="http://www.example.com/blondie.owl#Transaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#transactionOutputListBitcoinTransaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/blondie.owl#transactionOutputListBitcoinTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransaction"/>
+        <rdfs:range rdf:resource="http://www.example.com/blondie.owl#BitcoinTransaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/blondie.owl#addressAccount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#addressAccount">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#Account"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#balanceAccount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#balanceAccount">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#Account"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#bitsBitcoinBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#bitsBitcoinBlockheader">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#bodyEthereumMessageTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#bodyEthereumMessageTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumMessageTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#codeHashEthereumContractAccount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#codeHashEthereumContractAccount">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumContractAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#coinbaseEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#coinbaseEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#dataEthereumNormalTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#dataEthereumNormalTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumNormalTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#difficultyEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#difficultyEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#extraDataEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#extraDataEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#gasLimitEthereumBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#gasLimitEthereumBlock">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#gasLimitEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#gasLimitEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#gasPriceEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#gasPriceEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#gasUsedEthereumBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#gasUsedEthereumBlock">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#hashBitcoinTransactionInput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#hashBitcoinTransactionInput">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransactionInput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#hashBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#hashBlock">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#hashMerkleRootBitcoinBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#hashMerkleRootBitcoinBlockheader">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#hashPreviousBlockBitcoinBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#hashPreviousBlockBitcoinBlockheader">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#hashTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#hashTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#indexBitcoinTransactionInput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#indexBitcoinTransactionInput">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransactionInput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#initEthereumMessageTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#initEthereumMessageTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumMessageTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#lockTimeBitcoinTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#lockTimeBitcoinTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#logsBloomEthereumBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#logsBloomEthereumBlock">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#minerAddressEthereumBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#minerAddressEthereumBlock">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#nSequenceBitcoinTransactionInput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#nSequenceBitcoinTransactionInput">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransactionInput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#nValueBitcoinTransactionOutput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#nValueBitcoinTransactionOutput">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransactionOutput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#nonceBlockHeader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#nonceBlockHeader">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BlockHeader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#nonceEthereumAccount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#nonceEthereumAccount">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#nonceEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#nonceEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#numberEthereumBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#numberEthereumBlock">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#numberInputTransactionsBitcoinTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#numberInputTransactionsBitcoinTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#numberOutputTransactionsBitcoinTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#numberOutputTransactionsBitcoinTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#numberTransactionsPayload -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#numberTransactionsPayload">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#Payload"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#parentHashEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#parentHashEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#rEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#rEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#recevingAddressTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#recevingAddressTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#sEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#sEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#scriptPubkeyBitcoinTransactionOutput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#scriptPubkeyBitcoinTransactionOutput">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransactionOutput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#scriptPubkeyLenBitcoinTransactionOutput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#scriptPubkeyLenBitcoinTransactionOutput">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransactionOutput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#scriptSigBitcoinTransactionInput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#scriptSigBitcoinTransactionInput">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransactionInput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#scriptSigLenBitcoinTransactionInput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#scriptSigLenBitcoinTransactionInput">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransactionInput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#senderAddressTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#senderAddressTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#sizeBitcoinTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#sizeBitcoinTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#sizeEthereumBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#sizeEthereumBlock">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#stateRootEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#stateRootEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#storageRootEthereumContractAccount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#storageRootEthereumContractAccount">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumContractAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#timestampBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#timestampBlockheader">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BlockHeader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#transactionHashEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#transactionHashEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#uncleHashEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#uncleHashEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#vEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#vEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#valueEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#valueEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#versionBitcoinBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#versionBitcoinBlockheader">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#versionBitcoinTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/blondie.owl#versionBitcoinTransaction">
+        <rdfs:domain rdf:resource="http://www.example.com/blondie.owl#BitcoinTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/blondie.owl#Account -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#Account"/>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#Bitcoin -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#Bitcoin">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#Cryptocurrency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#BitcoinAccount -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#BitcoinAccount">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#Account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#BitcoinBlock -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#BitcoinBlock">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#Block"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#BitcoinBlockheader -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#BitcoinBlockheader">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#BlockHeader"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#BitcoinPayload -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#BitcoinPayload">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#Payload"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#BitcoinTransaction -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#BitcoinTransaction">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#Transaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#BitcoinTransactionInput -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#BitcoinTransactionInput"/>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#BitcoinTransactionOutput -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#BitcoinTransactionOutput"/>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#Block -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#Block"/>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#BlockHeader -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#BlockHeader"/>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#Cryptocurrency -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#Cryptocurrency"/>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#Ethereum -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#Ethereum">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#Cryptocurrency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#EthereumAccount -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#EthereumAccount">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#Account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#EthereumBlock -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#EthereumBlock">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#Block"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#EthereumBlockheader -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#EthereumBlockheader">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#BlockHeader"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#EthereumContractAccount -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#EthereumContractAccount">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#EthereumAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#EthereumExternallyOwnedAccount -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#EthereumExternallyOwnedAccount">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#EthereumAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#EthereumMessageTransaction -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#EthereumMessageTransaction">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#EthereumTransaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#EthereumNormalTransaction -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#EthereumNormalTransaction">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#EthereumTransaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#EthereumPayload -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#EthereumPayload">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#Payload"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#EthereumTransaction -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#EthereumTransaction">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/blondie.owl#Transaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#Payload -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#Payload"/>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#Transaction -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#Transaction"/>
+    
+
+
+    <!-- http://www.example.com/blondie.owl#Wallet -->
+
+    <owl:Class rdf:about="http://www.example.com/blondie.owl#Wallet"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.example.com/blondie.owl#Account"/>
+            <rdf:Description rdf:about="http://www.example.com/blondie.owl#BitcoinTransactionInput"/>
+            <rdf:Description rdf:about="http://www.example.com/blondie.owl#BitcoinTransactionOutput"/>
+            <rdf:Description rdf:about="http://www.example.com/blondie.owl#Block"/>
+            <rdf:Description rdf:about="http://www.example.com/blondie.owl#BlockHeader"/>
+            <rdf:Description rdf:about="http://www.example.com/blondie.owl#Cryptocurrency"/>
+            <rdf:Description rdf:about="http://www.example.com/blondie.owl#Payload"/>
+            <rdf:Description rdf:about="http://www.example.com/blondie.owl#Transaction"/>
+            <rdf:Description rdf:about="http://www.example.com/blondie.owl#Wallet"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+
