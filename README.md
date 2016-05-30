@@ -2,7 +2,8 @@
 BLONDiE - Blockchain Ontology with Dynamic Extensibility
 ![alt tag](https://raw.githubusercontent.com/hedugaro/Blondie/master/blondie.png)
 
-Author: Hector Ugarte
+Author: Hector Ugarte 
+
 University of Bonn
 
 Current Version 0.2
