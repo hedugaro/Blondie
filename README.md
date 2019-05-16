@@ -4,7 +4,7 @@ BLONDiE - Blockchain Ontology with Dynamic Extensibility
 
 Author: Msc. Hector E. Ugarte R. 
 This is 100% my own work. 
-Current Version 0.4
+Current Version 1.0
 
 Paper: https://hedugaro.github.io/Linked-Blockchain-Data/
 
