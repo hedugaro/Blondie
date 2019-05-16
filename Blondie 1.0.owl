@@ -1,0 +1,1001 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticblockchain.com/Blondie.owl#"
+     xml:base="http://www.semanticblockchain.com/Blondie.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticblockchain.com/Blondie.owl">
+        <rdfs:comment xml:lang="en">Blockchain Ontology with Dynamic Extensibilty - An ontology for describing blockchain structure and related information</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#hasBitcoinBlockheaderBlock -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#hasBitcoinBlockheaderBlock">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinBlock"/>
+        <rdfs:range rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinBlockheader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#hasBitcoinPayloadBlock -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#hasBitcoinPayloadBlock">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinBlock"/>
+        <rdfs:range rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinPayload"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#hasBitcoinTransactionInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#hasBitcoinTransactionInput">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransaction"/>
+        <rdfs:range rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#hasBitcoinTransactionOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#hasBitcoinTransactionOutput">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransaction"/>
+        <rdfs:range rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionOutput"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#hasBlockheaderBlock -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#hasBlockheaderBlock">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Block"/>
+        <rdfs:range rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Blockheader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#hasEthereumBlockheaderBlock -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#hasEthereumBlockheaderBlock">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlock"/>
+        <rdfs:range rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#hasEthereumPayloadBlock -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#hasEthereumPayloadBlock">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlock"/>
+        <rdfs:range rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumPayload"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#hasEthereumTransactionPayload -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#hasEthereumTransactionPayload">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumPayload"/>
+        <rdfs:range rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#hasOmmerEthereumPayload -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#hasOmmerEthereumPayload">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumPayload"/>
+        <rdfs:range rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumOmmerBlockheader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#hasPayloadBlock -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#hasPayloadBlock">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Block"/>
+        <rdfs:range rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Payload"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#hasTransactionPayload -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#hasTransactionPayload">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Payload"/>
+        <rdfs:range rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Transaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#addressEthereumAccount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#addressEthereumAccount">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#balanceEthereumAccount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#balanceEthereumAccount">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>A scalar value equal to the number of Wei owned by this address.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#beneficiaryEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#beneficiaryEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#chainCodeNameHyperledgerTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#chainCodeNameHyperledgerTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#chainCodePathHyperledgerTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#chainCodePathHyperledgerTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#chainCodeVersionHyperledgerTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#chainCodeVersionHyperledgerTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#channelIdHyperledgerTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#channelIdHyperledgerTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#codeHashContractEthereumAccount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#codeHashContractEthereumAccount">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#ContractEthereumAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The hash of the EVM code of this account this is the code that gets executed should this address receive a message call; it is immutable and thus, unlike all other fields, cannot be changed after construction. All such code fragments are contained in the state database under their corresponding hashes for later retrieval.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#currentBlockHashHyperledgerBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#currentBlockHashHyperledgerBlock">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperledgerBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#dataHashHyperledgerBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#dataHashHyperledgerBlock">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperledgerBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#dataMessageCallEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#dataMessageCallEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#MessageCallEthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#difficultyBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#difficultyBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Blockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#epochHyperledgerTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#epochHyperledgerTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#extraDataEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#extraDataEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#gasLimitEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#gasLimitEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#gasLimitEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#gasLimitEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>A scalar value equal to the maximum amount of gas that should be used in executing this transaction. This is paid up-front, before any computation is done and may not be increased later.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#gasPriceEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#gasPriceEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>A scalar value equal to the number of Wei to be paid per unit of gas for all computation costs incurred as a result of the execution of this transaction.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#gasUsedEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#gasUsedEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#hashBitcoinTransactionInput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#hashBitcoinTransactionInput">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#hashPreviousBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#hashPreviousBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Blockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#heightBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#heightBlock">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#indexBitcoinTransactionInput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#indexBitcoinTransactionInput">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#initContractCreationEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#initContractCreationEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#ContractCreationEthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#lockTimeBitcoinTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#lockTimeBitcoinTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#logsBloomEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#logsBloomEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#merkleRootBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#merkleRootBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Blockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#minerBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#minerBlock">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#mixHashEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#mixHashEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#nSequenceBitcoinTransactionInput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#nSequenceBitcoinTransactionInput">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#nValueBitcoinTransactionOutput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#nValueBitcoinTransactionOutput">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionOutput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#nonceBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#nonceBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Blockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#nonceEthereumAccount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#nonceEthereumAccount">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>A scalar value equal to the number of transactions sent from this address or, in the case of accounts with associated code, the number of contract-creations made by this account.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#nonceEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#nonceEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>A scalar value equal to the number of transactions sent by the sender.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#numberAncestorsEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#numberAncestorsEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#numberHyperledgerBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#numberHyperledgerBlock">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperledgerBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#numberInputTransactionsBitcoinTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#numberInputTransactionsBitcoinTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#numberOutputTransactionsBitcoinTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#numberOutputTransactionsBitcoinTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#numberTransactionsBitcoinPayload -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#numberTransactionsBitcoinPayload">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinPayload"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#omnersHashEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#omnersHashEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#payloadVisibilityHyperledgerTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#payloadVisibilityHyperledgerTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#previousHashHyperledgerBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#previousHashHyperledgerBlock">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperledgerBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#rEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#rEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#receiptsRootEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#receiptsRootEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#recipientEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#recipientEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#sEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#sEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#scriptPubkeyBitcoinTransactionOutput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#scriptPubkeyBitcoinTransactionOutput">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionOutput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#scriptPubkeyLenBitcoinTransactionOutput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#scriptPubkeyLenBitcoinTransactionOutput">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionOutput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#scriptSigLenBitcoinTransactionInput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#scriptSigLenBitcoinTransactionInput">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#scriptSignBitcoinTransactionInput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#scriptSignBitcoinTransactionInput">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#senderTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#senderTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#stateBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#stateBlock">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#storageRootContractEthereumAccount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#storageRootContractEthereumAccount">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#ContractEthereumAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>A 256-bit hash of the root node of a Merkle Patricia tree that encodes the storage contents
+of the account (a mapping between 256-bit integer values), encoded into the trie as a mapping
+from the Keccak 256-bit hash of the 256-bit integer keys to the RLP-encoded 256-bit integer values.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#timestampBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#timestampBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Blockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#timestampHyperledgerTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#timestampHyperledgerTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#totalCoinsBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#totalCoinsBlock">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#totalTransactionsBlock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#totalTransactionsBlock">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#transactionRootEthereumBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#transactionRootEthereumBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#txIdHyperledgerTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#txIdHyperledgerTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#typeHyperledgerTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#typeHyperledgerTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#vEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#vEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#valueEthereumTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#valueEthereumTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>A scalar value equal to the number of Wei to be transferred to the message call&apos;s recipient or, in the case of contract creation, as an endowment to the newly created account</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#versionBitcoinBlockheader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#versionBitcoinBlockheader">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinBlockheader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#versionBitcoinTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#versionBitcoinTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#versionHyperledgerTransaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#versionHyperledgerTransaction">
+        <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#BitcoinBlock -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#BitcoinBlock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Block"/>
+        <owl:disjointWith rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlock"/>
+        <owl:disjointWith rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperledgerBlock"/>
+        <rdfs:comment>Bitcoin block.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#BitcoinBlockheader -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#BitcoinBlockheader">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Blockheader"/>
+        <owl:disjointWith rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader"/>
+        <rdfs:comment>An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#BitcoinPayload -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#BitcoinPayload">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Payload"/>
+        <owl:disjointWith rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumPayload"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#BitcoinTransaction -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Transaction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput">
+        <rdfs:comment>Bitcoin input transaction</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionOutput -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionOutput">
+        <rdfs:comment>Bitcoin output transaction</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#Block -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#Block">
+        <rdfs:comment>Set of transactions with the same timestamp.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#Blockheader -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#Blockheader">
+        <rdfs:comment></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#ContractCreationEthereumTransaction -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#ContractCreationEthereumTransaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#ContractEthereumAccount -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#ContractEthereumAccount">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumAccount"/>
+        <owl:disjointWith rdf:resource="http://www.semanticblockchain.com/Blondie.owl#NormalAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#EthereumAccount -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#EthereumAccount"/>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#EthereumBlock -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#EthereumBlock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Block"/>
+        <owl:disjointWith rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperledgerBlock"/>
+        <rdfs:comment>Ethereum block</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Blockheader"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#EthereumOmmerBlockheader -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#EthereumOmmerBlockheader">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#EthereumPayload -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#EthereumPayload">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Payload"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Transaction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#HyperledgerBlock -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#HyperledgerBlock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Block"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#Transaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#MessageCallEthereumTransaction -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#MessageCallEthereumTransaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#NormalAccount -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#NormalAccount">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#NormalEthereumTransaction -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#NormalEthereumTransaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#Payload -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#Payload"/>
+    
+
+
+    <!-- http://www.semanticblockchain.com/Blondie.owl#Transaction -->
+
+    <owl:Class rdf:about="http://www.semanticblockchain.com/Blondie.owl#Transaction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionOutput"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#Block"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#Blockheader"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#EthereumAccount"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#EthereumOmmerBlockheader"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#Payload"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#Transaction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionOutput"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#Block"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#Blockheader"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#EthereumAccount"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#Payload"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#Transaction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#ContractCreationEthereumTransaction"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#MessageCallEthereumTransaction"/>
+            <rdf:Description rdf:about="http://www.semanticblockchain.com/Blondie.owl#NormalEthereumTransaction"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
